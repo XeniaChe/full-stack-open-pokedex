@@ -1,13 +1,11 @@
 name: hello
-on: 
+on:
   push:
-    branches: 
+    branches:
       - master
-jobs: 
-  first-hello:
-    name: sayHello Job
-    steps: 
-      -name: say Hello step
+jobs:
+  first_hello:
+    steps:
+      - name: Say hello step
         run: |
-          echo "Hello World!" 
-
+          echo "Hello World!"
