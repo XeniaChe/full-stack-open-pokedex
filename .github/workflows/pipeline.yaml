@@ -15,5 +15,10 @@ jobs:
           node-version: '16'
       - name: Install Dependencies
         run: npm install
+      - name: Run ESLint
+        uses: synergy-au/eslint-action@v1
+        with:
+          rules-path: './.eslintrc.json'
+          setup-from-package-json: 'true'
       - name: Run Style Checking
         run: npm run eslint
