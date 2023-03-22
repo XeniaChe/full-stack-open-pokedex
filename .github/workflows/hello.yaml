@@ -1,15 +1,4 @@
-# name: hello
-# on:
-#   push:
-#     branches:
-#       - master
-# jobs:
-#   first_hello:
-#     runs-on: windows-latest
-#     steps:
-#       - name: Say hello step
-#       run: echo "Hello World!"
-name: Hello World!
+name: hello
 
 on:
   push:
@@ -17,8 +6,21 @@ on:
       - master
 
 jobs:
-  hello_world_job:
+  first_hello:
     runs-on: windows-latest
     steps:
-      - name: Say hello
-        run: echo "Hello World!"
+      - name: Say hello step
+      run: echo "Hello World!"
+# name: Hello World!
+
+# on:
+#   push:
+#     branches:
+#       - master
+
+# jobs:
+#   hello_world_job:
+#     runs-on: windows-latest
+#     steps:
+#       - name: Say hello
+#         run: echo "Hello World!"
