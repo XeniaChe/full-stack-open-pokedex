@@ -4,9 +4,9 @@ on:
     branches:
       - master
 jobs:
-  runs-on: windows
     first_hello:
-    steps:
-      - name: Say hello step
-        run: |
-          echo "Hello World!"
+      runs-on: windows-latest
+        steps:
+          - name: Say hello step
+            run: |
+              echo "Hello World!"
