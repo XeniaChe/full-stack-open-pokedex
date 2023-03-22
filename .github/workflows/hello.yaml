@@ -14,4 +14,4 @@ jobs:
       - name: date
         run: date
       - name: list files
-        run: dir
+        run: ls
