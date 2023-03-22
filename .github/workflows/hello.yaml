@@ -4,7 +4,8 @@ on:
     branches:
       - master
 jobs:
-  first_hello:
+  runs-on: windows
+    first_hello:
     steps:
       - name: Say hello step
         run: |
