@@ -1,0 +1,10 @@
+name: hello
+on: [push]
+  branches: - master
+jobs: 
+  first-hello:
+    name: sayHello Job
+    steps: 
+    -name: say Hello step
+      - run: echo "Say Hello!!" 
+
