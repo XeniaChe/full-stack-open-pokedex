@@ -7,4 +7,5 @@ jobs:
   first_hello:
     runs-on: windows-latest
     steps:
+      - name: Say hello step
       run: echo "Hello World!"
