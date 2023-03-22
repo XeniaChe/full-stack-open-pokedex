@@ -11,16 +11,7 @@ jobs:
     steps:
       - name: Say hello step
         run: echo "Hello World!"
-# name: Hello World!
-
-# on:
-#   push:
-#     branches:
-#       - master
-
-# jobs:
-#   hello_world_job:
-#     runs-on: windows-latest
-#     steps:
-#       - name: Say hello
-#         run: echo "Hello World!"
+      - name: date
+        run: date
+      - name: list files
+        run: dir
